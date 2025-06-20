@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Testar API Cliente</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        h1 { color: #2c3e50; }
+        label, input, button { margin: 8px 0; display: block; }
+        textarea { width: 100%; height: 120px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Testar API Cliente</h1>
+    <label for="endpoint">Endpoint:</label>
+    <input type="text" id="endpoint" value="http://localhost:8080/clients/">
+    <label for="metodo">Método HTTP:</label>
+    <select id="metodo">
+        <option value="GET">GET</option>
+        <option value="POST">POST</option>
+        <option value="PUT">PUT</option>
+        <option value="DELETE">DELETE</option>
+    </select>
+    <label for="body">Body (JSON, para POST/PUT):</label>
+    <textarea id="body" placeholder='{"name":"Novo Cliente", "cpf":"12345678901", "income":2000.0, "birthDate":"2000-01-01T00:00:00Z", "children":1}'></textarea>
+    <button onclick="testarAPI()">Enviar</button>
+    <h2>Resposta:</h2>
+    <pre id="resposta"></pre>
+    <script>
+        async function testarAPI() {
+            const endpoint = document.getElementById('endpoint').value;
+            const metodo = document.getElementById('metodo').value;
+            const body = document.getElementById('body').value;
+            let options = { method: metodo, headers: { 'Content-Type': 'application/json' } };
+            if (metodo === 'POST' || metodo === 'PUT') {
+                options.body = body;
+            }
+            try {
+                const resp = await fetch(endpoint, options);
+                const text = await resp.text();
+                document.getElementById('resposta').textContent = text;
+            } catch (e) {
+                document.getElementById('resposta').textContent = 'Erro: ' + e;
+            }
+        }
+    </script>
+</body>
+</html>
