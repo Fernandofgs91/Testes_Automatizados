@@ -1,0 +1,475 @@
+{
+  "id": "ea5d6ed8-ba3a-461c-a489-77c9e4b3db89",
+  "version": "2.0",
+  "name": "projeto_veterinario",
+  "url": "http://localhost:8080/home",
+  "tests": [{
+    "id": "cd4519e4-f2e5-44e4-8cb5-bef5153342c1",
+    "name": "cadastrar veterinário",
+    "commands": [{
+      "id": "9412ac1d-02cd-4b8d-85f5-c2d9299b8937",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c4d45a3-d91a-42d2-8569-24108406fdab",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1012",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd12bbd1-a2de-4ef5-b7f5-aafa348e4967",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(3) > .btn",
+      "targets": [
+        ["css=a:nth-child(3) > .btn", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Adicionar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "986efc92-e91c-4635-bee8-6d422e7a7e71",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f3ef51c-1fd5-468a-a207-958be0cf537c",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Fernando Guimãraes Silva"
+    }, {
+      "id": "e2025b06-d698-44c9-a192-ecc047f6f2af",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=nome",
+      "targets": [],
+      "value": "Fernando Guimãraes Silva"
+    }, {
+      "id": "52c45fb1-acc0-42a8-83f5-5eedd5d1a8d1",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputEmail",
+      "targets": [
+        ["id=inputEmail", "id"],
+        ["name=email", "name"],
+        ["css=#inputEmail", "css:finder"],
+        ["xpath=//input[@id='inputEmail']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8eb5a4a-702b-4077-a0c9-29895e16fe8b",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputEmail",
+      "targets": [
+        ["id=inputEmail", "id"],
+        ["name=email", "name"],
+        ["css=#inputEmail", "css:finder"],
+        ["xpath=//input[@id='inputEmail']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "fernandofgs@iftm.com"
+    }, {
+      "id": "7fd8029b-b4ff-44b3-838e-9dd446957b58",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=inputEmail",
+      "targets": [],
+      "value": "fernandofgs@iftm.com"
+    }, {
+      "id": "be1ee1e7-9f2c-42b8-bd11-616cd11feb8a",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputEspecialidade",
+      "targets": [
+        ["id=inputEspecialidade", "id"],
+        ["name=especialidade", "name"],
+        ["css=#inputEspecialidade", "css:finder"],
+        ["xpath=//input[@id='inputEspecialidade']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1bdfdce2-c6dd-4768-97dd-d482346066db",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputEspecialidade",
+      "targets": [
+        ["id=inputEspecialidade", "id"],
+        ["name=especialidade", "name"],
+        ["css=#inputEspecialidade", "css:finder"],
+        ["xpath=//input[@id='inputEspecialidade']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Medico de cachorro especialista"
+    }, {
+      "id": "53335dba-7e6c-46d4-aeaf-a881eebb2253",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=inputEspecialidade",
+      "targets": [],
+      "value": "Medico de cachorro especialista"
+    }, {
+      "id": "ece493a0-99ab-4f9d-a117-6402e97ada66",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputSalario",
+      "targets": [
+        ["id=inputSalario", "id"],
+        ["name=salario", "name"],
+        ["css=#inputSalario", "css:finder"],
+        ["xpath=//input[@id='inputSalario']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "911f5956-3109-4d53-944e-8a8b4377388c",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputSalario",
+      "targets": [
+        ["id=inputSalario", "id"],
+        ["name=salario", "name"],
+        ["css=#inputSalario", "css:finder"],
+        ["xpath=//input[@id='inputSalario']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94fb1c0a-ffe1-4b8a-84f8-29d4525c9685",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputSalario",
+      "targets": [
+        ["id=inputSalario", "id"],
+        ["name=salario", "name"],
+        ["css=#inputSalario", "css:finder"],
+        ["xpath=//input[@id='inputSalario']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "3500"
+    }, {
+      "id": "36c29e16-2b29-4752-a2f0-6b0d24901041",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=inputSalario",
+      "targets": [],
+      "value": "3500"
+    }, {
+      "id": "7eb10172-d065-440a-97a1-baec2952cd2e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c951156-365f-42da-8685-ec7af6046d14",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > td:nth-child(2) > span",
+      "targets": [],
+      "value": "Fernando Guimãraes Silva"
+    }, {
+      "id": "8b662a9d-53aa-4c04-821c-10a78b6c7ae3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > td:nth-child(3) > span",
+      "targets": [],
+      "value": "Medico de cachorro especialista"
+    }, {
+      "id": "75b9e29a-cafe-47e6-bc9b-99e25c2286b3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > td:nth-child(4) > span",
+      "targets": [],
+      "value": "fernandofgs@iftm.com"
+    }]
+  }, {
+    "id": "e1d40c11-8ca6-4b8d-a0b6-91d318c1b923",
+    "name": "consultar veterinário",
+    "commands": [{
+      "id": "ab9c1828-faf1-43e8-af08-c25f2563db81",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0578ece6-c84b-44c8-9602-fb8bb3d49d45",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1012",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2da2eab4-ecbd-4e7f-863b-3dc9345bce02",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(4) > .btn",
+      "targets": [
+        ["css=a:nth-child(4) > .btn", "css:finder"],
+        ["xpath=//a[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Consultar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "940de48e-28c1-43b3-859e-c32c5069df47",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e396450b-c860-48c6-8d54-8c68c35a43ba",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Fernando"
+    }, {
+      "id": "b6da00d7-3a0c-4e0c-9e69-ffa2b6cb2f85",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=nome",
+      "targets": [],
+      "value": "Fernando"
+    }, {
+      "id": "31e831c8-ab68-48ea-96e3-2274bef94ba9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Consultar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4f7b393-370c-47bc-a9f4-11e84c910366",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(2) > td:nth-child(2) > span",
+      "targets": [],
+      "value": "Fernando Guimãraes Silva"
+    }, {
+      "id": "8f933b79-a264-49e6-807b-cc300ab58474",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(2) > td:nth-child(3) > span",
+      "targets": [],
+      "value": "Medico de cachorro especialista"
+    }]
+  }, {
+    "id": "d58d5835-29e8-4bda-b759-042cfb159c5b",
+    "name": "excluir veterinario",
+    "commands": [{
+      "id": "038c205b-5599-4d1f-afee-773f01af6c3e",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a2305ae-852b-4866-9061-ee99fee52969",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1012",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "25a496f5-773d-4879-83bf-3a3cc779ac48",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) .btn-danger > .fa",
+      "targets": [
+        ["css=tr:nth-child(4) .btn-danger", "css:finder"],
+        ["xpath=//a[contains(@href, 'delete/6')]", "xpath:href"],
+        ["xpath=//tr[4]/td[5]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "cf3a3922-b089-4346-ba66-bfd945583071",
+    "name": "editar veterinario",
+    "commands": [{
+      "id": "60432187-00d5-4dfe-853c-17d3197bd603",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "10a75efd-514f-4a66-8cd3-df00ed9a5fef",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1012",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b36c789-149d-4a55-b462-02bcd07733e3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > td:nth-child(2) > span",
+      "targets": [],
+      "value": "Fernando Guimãraes Silva"
+    }, {
+      "id": "3813cb21-f413-4260-a170-346f7eddeeb6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > td:nth-child(3) > span",
+      "targets": [],
+      "value": "Medico de cachorro especialista"
+    }, {
+      "id": "05deb848-09c8-46a6-ad9a-240ef1959f39",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) .btn-warning > .fa",
+      "targets": [
+        ["css=tr:nth-child(4) .btn-warning > .fa", "css:finder"],
+        ["xpath=//tr[4]/td[5]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76d7e28f-98ce-49d2-9831-968bc5c7409f",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aaaa77a5-1dcd-488e-87b9-a87342b3df37",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Fernando Oliveira Silva"
+    }, {
+      "id": "0f40e229-814b-4b7d-9164-055f8534dcf9",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=nome",
+      "targets": [],
+      "value": "Fernando Oliveira Silva"
+    }, {
+      "id": "aa67aad3-e80a-4f14-8855-205dd4dca8d6",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputEspecialidade",
+      "targets": [
+        ["id=inputEspecialidade", "id"],
+        ["name=especialidade", "name"],
+        ["css=#inputEspecialidade", "css:finder"],
+        ["xpath=//input[@id='inputEspecialidade']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c6c9ee2-cd3d-4dad-8b68-a6f9f5e387fe",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputEspecialidade",
+      "targets": [
+        ["id=inputEspecialidade", "id"],
+        ["name=especialidade", "name"],
+        ["css=#inputEspecialidade", "css:finder"],
+        ["xpath=//input[@id='inputEspecialidade']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": Medico de cachorro especialista
+    }, {
+      "id": "9718931a-b4e6-4756-a211-723b6129f0a7",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=inputEspecialidade",
+      "targets": [],
+      "value": Medico de cachorro especialista
+    }, {
+      "id": "36f38359-89ec-430c-b81c-1c98e2ac87e0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Atualizar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "adb1eb2a-0156-4874-9dca-f51c6f180e0c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > td:nth-child(2) > span",
+      "targets": [],
+      "value": "Fernando Oliveira Silva"
+    }, {
+      "id": "854630c4-fac4-4217-ae2c-d129c7b5eb03",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > td:nth-child(3) > span",
+      "targets": [],
+      "value": "Medico de cachorro especialista"
+    }]
+  }],
+  "suites": [{
+    "id": "5695792f-2ca3-4cb6-89fd-d8b974bb8767",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:8080/home"],
+  "plugins": []
+}
